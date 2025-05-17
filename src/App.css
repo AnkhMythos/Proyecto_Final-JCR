@@ -40,3 +40,56 @@
 .read-the-docs {
   color: #888;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+  color: white;
+}
+
+body.dark-mode .text-dark {
+  color: white !important;
+}
+
+/* filepath: c:\Users\monic\Desktop\Codigo\_React_JS_\Proyecto_Final-JCR\src\styles\global.css */
+
+/* Estilos para el modo claro (por defecto) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Ajusta enlaces en modo oscuro */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+/* Opcional: Estilos para tarjetas o contenedores */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+

@@ -86,6 +86,26 @@ C:\Users\Desktop\Codigo\_React_JS_\Talento_Tech_React_Final_JCR>git commit -m "R
 
 C:\Users\Desktop\Codigo\_React_JS_\Talento_Tech_React_Final_JCR>git branch -M main
 
-C:\Users\Desktop\Codigo\_React_JS_\Talento_Tech_React_Final_JCR>
 
+Renombrando el proyecto:
+Renombtrar el directorio
+git add -A
+git commit -m "Renombrado el proyecto a [Proyecto_Final-JCR]"
 
+create a new repository on the command line
+echo "# Proyecto_Final-JCR" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AnkhMythos/Proyecto_Final-JCR.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/AnkhMythos/Proyecto_Final-JCR.git
+git branch -M main
+git push -u origin main
+
+npm install react-router-dom styled-components
+npm install react-router-dom bootstrap react-bootstrap
+npm install react-icons

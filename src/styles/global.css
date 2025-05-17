@@ -1,0 +1,35 @@
+/* filepath: c:\Users\monic\Desktop\Codigo\_React_JS_\Proyecto_Final-JCR\src\styles\global.css */
+
+/* Estilos para el modo claro (por defecto) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Ajusta enlaces en modo oscuro */
+  body.dark-mode a {
+    color: #ffffff;
+  }
+  
+  /* Opcional: Estilos para tarjetas o contenedores */
+  body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1e1e1e;
+  }
+
+  /* Estilo para las imágenes dentro de las tarjetas */
+.card-img-top {
+  max-height: 400px; /* Altura máxima de 400 píxeles */
+  object-fit: cover; /* Mantiene el aspecto de la imagen */
+  object-position: center; /* Centra la imagen si se recorta */
+}
