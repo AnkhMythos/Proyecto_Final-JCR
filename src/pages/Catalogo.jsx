@@ -62,14 +62,14 @@ function Catalogo() {
   if (loading) {
     return (
       <Container className="mt-4">
-        <h1>Cargando productos...</h1>
+        <h2>Cargando productos...</h2>
       </Container>
     );
   }
 
   return (
-    <Container className="text-center mt-4">
-      <h1>Catálogo de Productos</h1>
+    <Container className="mt-4">
+      <h2 className="text-center">Catálogo de Productos</h2>
 
       <Row>
   {productos.map((producto) => (

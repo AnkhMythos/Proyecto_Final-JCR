@@ -7,7 +7,7 @@ const Contact=()=>
 <Container className="mt-5">
     <Row className="justify-content-center">
         <Col md={6}>
-          <div className="p-4 border rounded shadow-sm justify-content-center">
+          <div className="p-4 border rounded shadow-sm">
  
           <Form>
             <h2>Página de Contacto</h2>

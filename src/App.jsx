@@ -2,7 +2,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Cart from './pages/Cart';
+import Productos from './pages/Productos';
 import Ingresar from './pages/Ingresar';
 import Catalogo from './pages/Catalogo';
 import Crearusuario from './pages/CrearUsuario';
@@ -42,13 +42,12 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
-          {/* <Route path='/Gal*' element={<h1>Galeria</h1>} /> */}
-          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Productos" element={<Productos />} />
           <Route path="/Ingresar" element={<Ingresar />} />
           <Route path="/CrearUsuario" element={<Crearusuario/>} />
-          <Route path='/Catalogo' element={<Catalogo />} />
-          <Route path="/Chango" element={<Chango />} />
-          <Route path="/Carro" element={<Carro />} />
+          {/* <Route path='/Catalogo' element={<Catalogo />} /> */}
+          {/* <Route path="/Chango" element={<Chango />} /> */}
+          {/* <Route path="/Carro" element={<Carro />} /> */}
         </Routes>
       </Router>
     </div>

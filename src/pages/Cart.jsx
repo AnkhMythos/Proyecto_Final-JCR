@@ -70,7 +70,7 @@ function Cart() {
 
   return (
     <Container className="mt-4">
-      <h1>Catálogo de Productos</h1>
+      <h2 className="text-center">Catálogo de Productos</h2>
       <Row>
         {productos.map((producto) => (
           <Col key={producto.id} md={4}>

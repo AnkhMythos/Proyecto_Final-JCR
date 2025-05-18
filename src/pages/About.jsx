@@ -1,15 +1,13 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
-
-const About=()=>
-    {
-        return(
-<Container className="mt-4">
-    <h1>Nosotros</h1>
-    <p>Quienes somos</p>
-</Container>
-        );
-    };
+function About() {
+  return (
+    <Container className="mt-4">
+      <h1>Nosotros</h1>
+      <p>Somos una tienda online dedicada a ofrecer productos de calidad en indumentaria, joyas y electrónica. Nuestro objetivo es brindar una experiencia de compra sencilla, rápida y segura.</p>
+    </Container>
+  );
+}
 
 export default About;
