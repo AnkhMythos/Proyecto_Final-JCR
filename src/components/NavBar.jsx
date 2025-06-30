@@ -83,9 +83,9 @@ function NavBar({ carrito = [] }) {
             <Nav.Link as={Link} to="/Productos">
               Productos
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/Chango">
-              Chango
-            </Nav.Link> */}
+            <Nav.Link as={Link} to="/ProductCrud">
+              CRUD
+            </Nav.Link>
             {/* <Nav.Link as={Link} to="/Carro">
               Carro
             </Nav.Link> */}
@@ -114,6 +114,7 @@ function NavBar({ carrito = [] }) {
               className={`btn btn-sm ${
                 darkMode ? "btn-outline-light" : "btn-outline-secondary"
               } w-100`}
+               style={{ border: "none" }}
             >
               {darkMode ? "☀️" : "🌙"}
             </button>

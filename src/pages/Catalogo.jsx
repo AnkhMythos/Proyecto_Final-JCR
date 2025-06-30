@@ -11,8 +11,9 @@ function Catalogo() {
 
   useEffect(() => {
     // Hacer el pedido de la API
-    fetch("https://fakestoreapi.com/products")
+    // fetch("https://fakestoreapi.com/products")
     // fetch("https://api.escuelajs.co/api/v1/products")
+    fetch("https://685ffd7dc55df675589fd403.mockapi.io/fakestoreapi/productos")
       .then((res) => res.json())
       .then((data) => {
         setProductos(data);

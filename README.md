@@ -109,3 +109,52 @@ git push -u origin main
 npm install react-router-dom styled-components
 npm install react-router-dom bootstrap react-bootstrap
 npm install react-icons
+
+
+talento-tech-react-final-jcr@0.0.0 C:\Users\monic\Desktop\Codigo\_React_JS_\Proyecto_Final-JCR
+├── @eslint/js@9.26.0
+├── @types/react-dom@19.1.3
+├── @types/react@19.1.3
+├── @vitejs/plugin-react@4.4.1
+├── bootstrap@5.3.6
+├── eslint-plugin-react-hooks@5.2.0
+├── eslint-plugin-react-refresh@0.4.20
+├── eslint@9.26.0
+├── globals@16.1.0
+├── react-bootstrap@2.10.9
+├── react-dom@19.1.0
+├── react-icons@5.5.0
+├── react-router-dom@7.6.0
+├── react-toastify@11.0.5
+├── react@19.1.0
+├── styled-components@6.1.18
+└── vite@6.3.5
+
+PARA USAR GIT PAGES CON REACT
+1- Instalar gh-pages: para eso desde la terminal me ubico en la carpeta del proyecto:
+	 npm install gh-pages --save-dev 
+
+2-Ajusto el package.json agregando lo siguiente:
+	En la sección SCRIPTS, debajo de “dev”y antes de “build” agrego:
+    		"predeploy": "npm run build",
+   		 "deploy": "gh-pages -d dist",
+
+
+3-Ajusto el archivo vite.config.js agregando el repositorio donde se hará el deploy
+	En la función defineConfig() agrego lo siguiente:
+		base: “/Nombre del repositorio”,
+	La función quedaría de la siguiente manera:
+		export default defineConfig({
+  			base: “/entrega-apellido”,
+  			plugins: [react()],
+		})
+
+4- Subo los cambios a github
+	git add .
+	git commit -m “gh-pages added”
+	git push
+
+5- Genero el deploy
+	npm run deploy
+
+Listo. Ahi queda configurado git pages

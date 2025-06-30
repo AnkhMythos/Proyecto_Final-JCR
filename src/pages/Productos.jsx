@@ -65,7 +65,8 @@ const realizarCompra = () => {
 
   useEffect(() => {
     // Hacer el pedido de la API
-    fetch("https://fakestoreapi.com/products")
+    // fetch("https://fakestoreapi.com/products")
+    fetch("https://685ffd7dc55df675589fd403.mockapi.io/fakestoreapi/productos")
       .then((res) => res.json())
       .then((data) => {
         setProductos(data);
@@ -179,7 +180,7 @@ const realizarCompra = () => {
 >
   <FiShoppingCart size={22} />
   {carrito.length > 0 && (
-    <span className="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle" style={{ fontSize: '0.65rem' }}>
+    <span className="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle" style={{ fontSize: '0.7rem' }}>
       {carrito.length}
     </span>
   )}

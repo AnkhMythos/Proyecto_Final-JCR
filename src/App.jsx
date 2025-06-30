@@ -4,9 +4,10 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Productos from './pages/Productos';
 import Ingresar from './pages/Ingresar';
+// import Login from './pages/Login';
 import Catalogo from './pages/Catalogo';
 import Crearusuario from './pages/CrearUsuario';
-import Chango from './pages/Chango';
+import ProductCrud from './pages/ProductCrud';
 import Carro from './pages/Carro';
 import CartModal from './components/CartModal';
 import React, { useState, useEffect } from "react";
@@ -44,9 +45,10 @@ function App() {
           <Route path='/Contact' element={<Contact />} />
           <Route path="/Productos" element={<Productos />} />
           <Route path="/Ingresar" element={<Ingresar />} />
+          {/* <Route path="/Login" element={<Login />} /> */}
           <Route path="/CrearUsuario" element={<Crearusuario/>} />
           {/* <Route path='/Catalogo' element={<Catalogo />} /> */}
-          {/* <Route path="/Chango" element={<Chango />} /> */}
+          <Route path="/ProductCrud" element={<ProductCrud />} />
           {/* <Route path="/Carro" element={<Carro />} /> */}
         </Routes>
       </Router>
