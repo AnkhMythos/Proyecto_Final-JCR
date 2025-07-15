@@ -157,4 +157,9 @@ PARA USAR GIT PAGES CON REACT
 5- Genero el deploy
 	npm run deploy
 
-Listo. Ahi queda configurado git pages
+	Asi queda configurado git pages
+
+Utiliza Api Pública propia en
+https://mockapi.io/projects/685ffd7dc55df675589fd404
+
+fetch("https://685ffd7dc55df675589fd403.mockapi.io/fakestoreapi/productos")

@@ -3,12 +3,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Productos from './pages/Productos';
+import Catalogo from './pages/Catalogo';
 import Ingresar from './pages/Ingresar';
 // import Login from './pages/Login';
-import Catalogo from './pages/Catalogo';
 import Crearusuario from './pages/CrearUsuario';
 import ProductCrud from './pages/ProductCrud';
-import Carro from './pages/Carro';
+import Footer from './pages/Footer'
 import CartModal from './components/CartModal';
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -44,13 +44,14 @@ function App() {
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path="/Productos" element={<Productos />} />
+          <Route path="/Catalogo" element={<Catalogo />} />
           <Route path="/Ingresar" element={<Ingresar />} />
           {/* <Route path="/Login" element={<Login />} /> */}
           <Route path="/CrearUsuario" element={<Crearusuario/>} />
-          {/* <Route path='/Catalogo' element={<Catalogo />} /> */}
           <Route path="/ProductCrud" element={<ProductCrud />} />
-          {/* <Route path="/Carro" element={<Carro />} /> */}
+          
         </Routes>
+        {/* <Footer/> */}
       </Router>
     </div>
   );

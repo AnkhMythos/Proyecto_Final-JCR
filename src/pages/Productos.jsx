@@ -3,6 +3,10 @@ import { Container, Row, Col, Card, Button, Offcanvas, Image } from "react-boots
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FiShoppingCart } from "react-icons/fi";
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
+import { ToastContainer, toast } from 'react-toastify';
+// import Buscador from './components/Buscador';
+// import Paginador from './components/Paginador';
 
 function Productos() {
   const [productos, setProductos] = useState([]); // Productos obtenidos de la API
@@ -139,37 +143,45 @@ const realizarCompra = () => {
               
 
               <Card.Body className="d-flex flex-column">
-  <Card.Title className="mb-2">{producto.title}</Card.Title>
+              <Card.Title className="mb-2">{producto.title}</Card.Title>
 
-  {/* Descripción */}
-  <Card.Text className="mb-3 flex-grow-1 align-items-lefth" style={{ fontSize: '0.9rem' }}>
-    {producto.description.length > 100
-      ? producto.description.substring(0, 100) + "..."
-      : producto.description}
-  </Card.Text>
+            {/* Descripción */}
+            <Card.Text className="mb-3 flex-grow-1 align-items-lefth" style={{ fontSize: '0.9rem' }}>
+              {producto.description.length > 100
+                ? producto.description.substring(0, 100) + "..."
+                : producto.description}
+            </Card.Text>
 
-{/* Precio a la izquierda, Botón a la derecha */}
-  <div className="d-flex justify-content-between align-items-center mt-auto">
-    <Card.Text className="mb-0">
-      <strong>Precio:</strong> ${producto.price}
-    </Card.Text>
-    <Card.Text>
-    <Button
-      variant="primary"
-      size="sm"
-      onClick={() => agregarAlCarrito(producto)}
-    >
-      Agregar
-    </Button>
-    </Card.Text>
-  </div>
+          {/* Precio a la izquierda, Botón a la derecha */}
+          <div className="d-flex justify-content-between align-items-center mt-auto">
+            <Card.Text className="mb-0">
+              <strong>Precio:</strong> ${producto.price}
+            </Card.Text>
+            <Card.Text>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => agregarAlCarrito(producto)}
+            >
+              Agregar
+            </Button>
+                </Card.Text>
+              </div>
 
 
-</Card.Body>
-            </Card>
-          </Col>
-        ))}
+            </Card.Body>
+                        </Card>
+                      </Col>
+                    ))}
       </Row>
+
+      {/* Aquí va el Buscador y el Paginador */}
+    {/* <Buscador productos={productosVisibles} />
+    <Paginador
+      totalPaginas={totalPaginas}
+      paginaActual={paginaActual}
+      cambiarPagina={setPaginaActual}
+    /> */}
 
 {/* Botón de carrito con aspecto de ícono y contador */}
 {/* <Button

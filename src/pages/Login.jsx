@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useAuthContext } from "../context/AuthContext";
+import { useAuthContext } from "../context/AuthContext";
 
 function Login() {
   const [usuario, setUsuario] = useState("");
@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulación de autenticación
-    if (usuario === "admin" && password === "admin") {
+    if (usuario === "admin@tienda.com" && password === "admin") {
       login(usuario);
       navigate("/dashboard");
     } else {
