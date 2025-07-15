@@ -154,6 +154,8 @@ PARA USAR GIT PAGES CON REACT
 	git commit -m “gh-pages added”
 	git push
 
+	git push origin main --force
+
 5- Genero el deploy
 	npm run deploy
 
@@ -163,3 +165,6 @@ Utiliza Api Pública propia en
 https://mockapi.io/projects/685ffd7dc55df675589fd404
 
 fetch("https://685ffd7dc55df675589fd403.mockapi.io/fakestoreapi/productos")
+
+https://proyectofinaljcr.netlify.app/
+https://github.com/AnkhMythos/Proyecto_Final-JCR
